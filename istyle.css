@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: crimson;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    float: left;
+	width: 100px;
+	height: 80px;
+    
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-links a:hover{
+    background: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+.nav-links{
+    animation: fadein 7s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: -5; }
+    to { opacity: 1; }
+  }
+.logo{
+    animation: fadein 7s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: -5; }
+    to { opacity: 1; }
+  }
+
+
+.slider-container{
+    width: 1500px;
+    overflow: hidden;
+    height: 400px;
+    background-repeat: no-repeat;
+
+}
+.slider{
+    display: flex;
+    width: 300%;/*The width should be set to three times the width of the image*/
+    animation: slide 100s linear infinite;/* Change the duration and timing function as desired*/
+}
+.slider img{
+    width: 33.33%;/* Each image should take up one third of the slider*/
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-200%);/* The value should be set to two times the width of on image*/
+    }
+}
+.form{
+    width:480px;
+    height:420px;
+    background-color: crimson;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-style: ridge;
+    border-color: black;
+}
+.image2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+.form{
+    animation: fadein 10s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: -5; }
+    to { opacity: 1; }
+  }
+
+  .footer{
+    background-color: crimson;
+    text-decoration-color: rgb(226, 226, 226);
+    text-align: center;
+    position: static;
+    width: 1600px;
+    border: 2px solid;
+    bottom: 0%;
+  }
+  .footer li{
+    list-style: none;
+    display: inline;
+  }
+
+
+
